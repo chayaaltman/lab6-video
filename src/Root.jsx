@@ -6,6 +6,7 @@ import { SameColour, SAME_COLOUR_FRAMES } from "./scenes/SameColour";
 import { EveStuck, EVE_STUCK_FRAMES } from "./scenes/EveStuck";
 import { Numbers, NUMBERS_FRAMES } from "./scenes/Numbers";
 import { Clock, CLOCK_FRAMES } from "./scenes/Clock";
+import { Closing, CLOSING_FRAMES } from "./scenes/Closing";
 import { FullVideo, FULL_VIDEO_FRAMES } from "./FullVideo";
 
 export const RemotionRoot = () => (
@@ -62,6 +63,14 @@ export const RemotionRoot = () => (
       id="Clock"
       component={Clock}
       durationInFrames={CLOCK_FRAMES} // Scene 6, 11.7 s
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="Closing"
+      component={Closing}
+      durationInFrames={CLOSING_FRAMES} // Scene 7, 13 s
       fps={30}
       width={1920}
       height={1080}

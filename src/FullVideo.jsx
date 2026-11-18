@@ -7,6 +7,7 @@ import { SameColour, SAME_COLOUR_FRAMES } from "./scenes/SameColour";
 import { EveStuck, EVE_STUCK_FRAMES } from "./scenes/EveStuck";
 import { Numbers, NUMBERS_FRAMES } from "./scenes/Numbers";
 import { Clock, CLOCK_FRAMES } from "./scenes/Clock";
+import { Closing, CLOSING_FRAMES } from "./scenes/Closing";
 
 const SCENES = [
   { component: Hook, frames: 285 }, // Scene 1
@@ -15,6 +16,7 @@ const SCENES = [
   { component: EveStuck, frames: EVE_STUCK_FRAMES }, // Scene 4
   { component: Numbers, frames: NUMBERS_FRAMES }, // Scene 5
   { component: Clock, frames: CLOCK_FRAMES }, // Scene 6
+  { component: Closing, frames: CLOSING_FRAMES }, // Scene 7
 ];
 
 export const FULL_VIDEO_FRAMES = SCENES.reduce((sum, s) => sum + s.frames, 0);
