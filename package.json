@@ -1,0 +1,30 @@
+{
+  "name": "lab6-video",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "studio": "remotion studio src/index.jsx",
+    "render": "remotion render src/index.jsx TestClip out/test-clip.mp4",
+    "narrate": "node scripts/narrate.mjs",
+    "render:hook": "remotion render src/index.jsx Hook out/hook.mp4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/cli": "^4.0.544",
+    "@remotion/media-utils": "^4.0.544",
+    "kokoro-js": "^1.2.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "remotion": "^4.0.544"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "onnxruntime-node@1.21.0": true,
+    "sharp@0.34.5": true,
+    "protobufjs@7.6.6": true
+  }
+}
