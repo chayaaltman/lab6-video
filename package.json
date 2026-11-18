@@ -7,7 +7,8 @@
     "studio": "remotion studio src/index.jsx",
     "render": "remotion render src/index.jsx TestClip out/test-clip.mp4",
     "narrate": "node scripts/narrate.mjs",
-    "render:hook": "remotion render src/index.jsx Hook out/hook.mp4"
+    "render:hook": "remotion render src/index.jsx Hook out/hook.mp4",
+    "render:full": "remotion render src/index.jsx FullVideo"
   },
   "keywords": [],
   "author": "",

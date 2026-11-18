@@ -4,6 +4,8 @@ import { Hook } from "./scenes/Hook";
 import { MixAndSwap, MIX_AND_SWAP_FRAMES } from "./scenes/MixAndSwap";
 import { SameColour, SAME_COLOUR_FRAMES } from "./scenes/SameColour";
 import { EveStuck, EVE_STUCK_FRAMES } from "./scenes/EveStuck";
+import { Numbers, NUMBERS_FRAMES } from "./scenes/Numbers";
+import { FullVideo, FULL_VIDEO_FRAMES } from "./FullVideo";
 
 export const RemotionRoot = () => (
   <>
@@ -43,6 +45,22 @@ export const RemotionRoot = () => (
       id="EveStuck"
       component={EveStuck}
       durationInFrames={EVE_STUCK_FRAMES} // Scene 4, 8.5 s
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="Numbers"
+      component={Numbers}
+      durationInFrames={NUMBERS_FRAMES} // Scene 5, 20 s
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="FullVideo"
+      component={FullVideo}
+      durationInFrames={FULL_VIDEO_FRAMES} // all finished scenes in order
       fps={30}
       width={1920}
       height={1080}
