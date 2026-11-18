@@ -5,6 +5,7 @@ import { MixAndSwap, MIX_AND_SWAP_FRAMES } from "./scenes/MixAndSwap";
 import { SameColour, SAME_COLOUR_FRAMES } from "./scenes/SameColour";
 import { EveStuck, EVE_STUCK_FRAMES } from "./scenes/EveStuck";
 import { Numbers, NUMBERS_FRAMES } from "./scenes/Numbers";
+import { Clock, CLOCK_FRAMES } from "./scenes/Clock";
 import { FullVideo, FULL_VIDEO_FRAMES } from "./FullVideo";
 
 export const RemotionRoot = () => (
@@ -53,6 +54,14 @@ export const RemotionRoot = () => (
       id="Numbers"
       component={Numbers}
       durationInFrames={NUMBERS_FRAMES} // Scene 5, 20 s
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="Clock"
+      component={Clock}
+      durationInFrames={CLOCK_FRAMES} // Scene 6, 11.7 s
       fps={30}
       width={1920}
       height={1080}
