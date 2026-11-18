@@ -108,6 +108,24 @@ Kokoro TTS, voice **`af_heart`**, normal speed (≈ 2.5 words / second). One aud
 **Narration**
 > Real keys have over six hundred digits, and your browser does this on every secure website. Everything was public, yet the key stayed secret.
 
+## Scene 8 — Putting it together (added after the first full cut)
+
+Added because the paint story and the number story were never explicitly connected: the viewer had to work out on their own that they are the same thing. This scene is now the ending.
+
+**On screen**
+- Title "PUTTING IT TOGETHER". Two column headers: **PAINT** (left) and **NUMBERS** (right), with a "=" column between them.
+- Six rows build one at a time, each on its narration line:
+  1. yellow pot "public paint" = yellow cards **5**, **23** "public numbers"
+  2. red and blue drops "secret colours" = red **6**, blue **15** "secret exponents"
+  3. yellow + red → orange "mixing" = `5^secret mod 23` "raising to a power"
+  4. orange and green pots "swapped mixtures" = orange **8**, green **19** "sent in public"
+  5. brown pot "same brown" = glowing brown **2** "same key"
+  6. cracked arrow "can't un-mix" = "discrete logarithm" "too hard for Eve"
+- The table fades back; centred final line: "Two strangers, talking in public, end up sharing a secret." with a glowing brown key under Alice and Bob's names, and Eve greyed out between them.
+
+**Narration**
+> Let's put it all together. The public paint is the public numbers, five and twenty three. The secret colours are the secret exponents, six and fifteen. Mixing is raising to that power, mod twenty three. The mixtures they swap are eight and nineteen. Adding your secret again gives the same brown: the same key, two. And un-mixing is the discrete logarithm, which is too hard for Eve. So two strangers, talking in public, end up sharing a secret.
+
 ---
 
 ## Word count and timing (≈ 2.5 words / second)

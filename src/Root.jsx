@@ -7,6 +7,7 @@ import { EveStuck, EVE_STUCK_FRAMES } from "./scenes/EveStuck";
 import { Numbers, NUMBERS_FRAMES } from "./scenes/Numbers";
 import { Clock, CLOCK_FRAMES } from "./scenes/Clock";
 import { Closing, CLOSING_FRAMES } from "./scenes/Closing";
+import { Recap, RECAP_FRAMES } from "./scenes/Recap";
 import { FullVideo, FULL_VIDEO_FRAMES } from "./FullVideo";
 
 export const RemotionRoot = () => (
@@ -71,6 +72,14 @@ export const RemotionRoot = () => (
       id="Closing"
       component={Closing}
       durationInFrames={CLOSING_FRAMES} // Scene 7, 13 s
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="Recap"
+      component={Recap}
+      durationInFrames={RECAP_FRAMES} // Scene 8, the new ending
       fps={30}
       width={1920}
       height={1080}
