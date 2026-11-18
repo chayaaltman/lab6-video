@@ -3,6 +3,7 @@ import { TestClip } from "./TestClip";
 import { Hook } from "./scenes/Hook";
 import { MixAndSwap, MIX_AND_SWAP_FRAMES } from "./scenes/MixAndSwap";
 import { SameColour, SAME_COLOUR_FRAMES } from "./scenes/SameColour";
+import { EveStuck, EVE_STUCK_FRAMES } from "./scenes/EveStuck";
 
 export const RemotionRoot = () => (
   <>
@@ -34,6 +35,14 @@ export const RemotionRoot = () => (
       id="SameColour"
       component={SameColour}
       durationInFrames={SAME_COLOUR_FRAMES} // Scene 3, 8 s
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    <Composition
+      id="EveStuck"
+      component={EveStuck}
+      durationInFrames={EVE_STUCK_FRAMES} // Scene 4, 8.5 s
       fps={30}
       width={1920}
       height={1080}
