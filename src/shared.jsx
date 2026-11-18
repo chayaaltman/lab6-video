@@ -131,3 +131,15 @@ export const Caption = ({ frame, from, to, children, color = TEXT }) => {
     </div>
   );
 };
+
+// A key icon drawn in SVG; (x, y) is its centre.
+export const Key = ({ x, y, color, size = 120, style = {} }) => (
+  <div style={{ position: "absolute", left: x - size / 2, top: y - size / 4, width: size, height: size / 2, ...style }}>
+    <svg width={size} height={size / 2} viewBox="0 0 120 60">
+      <circle cx="22" cy="30" r="17" fill="none" stroke={color} strokeWidth="9" />
+      <rect x="38" y="25" width="76" height="10" rx="3" fill={color} />
+      <rect x="92" y="33" width="9" height="16" rx="2" fill={color} />
+      <rect x="76" y="33" width="9" height="12" rx="2" fill={color} />
+    </svg>
+  </div>
+);
